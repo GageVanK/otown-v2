@@ -11,8 +11,6 @@ import {
   UnstyledButton,
   Image,
   ActionIcon,
-  Space,
-  Center
 } from "@mantine/core";
 import { IconPhone } from "@tabler/icons-react";
 import { useDisclosure } from "@mantine/hooks";
@@ -24,7 +22,7 @@ const HEADER_HEIGHT = rem(60);
 const useStyles = createStyles((theme) => ({
   root: {
     position: "fixed",
-    zIndex: 1
+    zIndex: 1,
   },
 
   dropdown: {
@@ -39,27 +37,27 @@ const useStyles = createStyles((theme) => ({
     overflow: "hidden",
 
     [theme.fn.largerThan("sm")]: {
-      display: "none"
-    }
+      display: "none",
+    },
   },
 
   header: {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    height: "100%"
+    height: "100%",
   },
 
   links: {
     [theme.fn.smallerThan("sm")]: {
-      display: "none"
-    }
+      display: "none",
+    },
   },
 
   burger: {
     [theme.fn.largerThan("sm")]: {
-      display: "none"
-    }
+      display: "none",
+    },
   },
 
   link: {
@@ -78,31 +76,31 @@ const useStyles = createStyles((theme) => ({
     "&:hover": {
       backgroundColor: theme.fn.variant({
         variant: "light",
-        color: "lime"
-      }).background
+        color: "lime",
+      }).background,
     },
 
     [theme.fn.smallerThan("sm")]: {
       borderRadius: 0,
-      padding: theme.spacing.md
-    }
+      padding: theme.spacing.md,
+    },
   },
 
   linkActive: {
     "&, &:hover": {
       backgroundColor: theme.fn.variant({
         variant: "light",
-        color: "lime"
+        color: "lime",
       }).background,
-      color: theme.fn.variant({ variant: "light", color: "lime" }).color
-    }
-  }
+      color: theme.fn.variant({ variant: "light", color: "lime" }).color,
+    },
+  },
 }));
 
 const links = [
   { link: "/", label: "Home" },
   { link: "/contactUs", label: "Contact Us" },
-  { link: "/faq", label: "FAQ" }
+  { link: "/faq", label: "FAQ" },
 ];
 
 export function HeaderResponsive() {
@@ -116,7 +114,7 @@ export function HeaderResponsive() {
       key={link.label}
       href={link.link}
       className={cx(classes.link, {
-        [classes.linkActive]: active === link.link
+        [classes.linkActive]: active === link.link,
       })}
       onClick={(event) => {
         event.preventDefault();

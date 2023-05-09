@@ -1,18 +1,13 @@
-import { Carousel } from "@mantine/carousel";
-import { useRef } from "react";
-import Autoplay from "embla-carousel-autoplay";
 import {
   Image,
   Container,
   Grid,
   SimpleGrid,
-  Skeleton,
   useMantineTheme,
-  rem
+  rem,
 } from "@mantine/core";
 import roof1 from "../assets/roof1.jpeg";
 import roof2 from "../assets/roof2.jpeg";
-import roof3 from "../assets/roof3.jpeg";
 import roof4 from "../assets/roof4.jpeg";
 import roof5 from "../assets/roof5.jpeg";
 import Zoom from "react-reveal/Zoom";
