@@ -23,6 +23,7 @@ import {
   IconBrandFacebook,
   IconPhone,
 } from "@tabler/icons-react";
+
 import { Slide } from "react-awesome-reveal";
 const mockdata = [
   {
@@ -114,7 +115,7 @@ export default function FeatureSection() {
   const { classes, theme } = useStyles();
 
   const features = mockdata.map((feature) => (
-    <Slide left cascade>
+    <Slide cascade>
       <Card
         key={feature.title}
         shadow="md"
