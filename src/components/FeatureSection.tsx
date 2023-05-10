@@ -23,7 +23,7 @@ import {
   IconBrandFacebook,
   IconPhone,
 } from "@tabler/icons-react";
-import React from "react";
+
 import { Slide } from "react-awesome-reveal";
 const mockdata = [
   {
