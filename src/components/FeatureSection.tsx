@@ -10,7 +10,7 @@ import {
   rem,
   Space,
   Badge,
-  ActionIcon
+  ActionIcon,
 } from "@mantine/core";
 import {
   IconTools,
@@ -21,46 +21,46 @@ import {
   IconCloudStorm,
   IconBrandInstagram,
   IconBrandFacebook,
-  IconPhone
+  IconPhone,
 } from "@tabler/icons-react";
-import Slide from "react-reveal/Slide";
+import { Slide } from "react-awesome-reveal";
 const mockdata = [
   {
     title: "Residential Roofing",
     description:
       "From leaks to complete replacements, we've got you covered. Roofing solutions for every budget.",
-    icon: IconHomeCheck
+    icon: IconHomeCheck,
   },
   {
     title: "Contracting",
     description:
       "Building with a passion for perfection. From planning to execution, we'll handle it all. ",
-    icon: IconTools
+    icon: IconTools,
   },
   {
     title: "Quality Repairs",
     description:
       "Efficient, effective, and high-quality repairs. Restoring your property with a focus on longevity.",
-    icon: IconTool
+    icon: IconTool,
   },
   {
     title: "Insurance Restoration",
     description:
       "Bringing your home back to life with quality insurance restoration services. Maximizing your insurance claim for roofing and construction repairs.",
-    icon: IconLicense
+    icon: IconLicense,
   },
   {
     title: "Licensed & Insured",
     description:
       "Experience the peace of mind of working with licensed professionals. Insured to protect your property and our team. ",
-    icon: IconShieldCheckered
+    icon: IconShieldCheckered,
   },
   {
     title: "Storm Damage",
     description:
       "We're here for you when the weather isn't. Experts in storm damage restoration.",
-    icon: IconCloudStorm
-  }
+    icon: IconCloudStorm,
+  },
 ];
 
 const useStyles = createStyles((theme) => ({
@@ -69,8 +69,8 @@ const useStyles = createStyles((theme) => ({
     fontWeight: 900,
 
     [theme.fn.smallerThan("sm")]: {
-      fontSize: rem(24)
-    }
+      fontSize: rem(24),
+    },
   },
 
   description: {
@@ -85,8 +85,8 @@ const useStyles = createStyles((theme) => ({
       height: rem(2),
       marginTop: theme.spacing.sm,
       marginLeft: "auto",
-      marginRight: "auto"
-    }
+      marginRight: "auto",
+    },
   },
 
   card: {
@@ -94,7 +94,7 @@ const useStyles = createStyles((theme) => ({
       theme.colorScheme === "dark" ? theme.colors.dark[5] : theme.colors.gray[1]
     }`,
     height: "100%",
-    width: "100%"
+    width: "100%",
   },
 
   cardTitle: {
@@ -105,9 +105,9 @@ const useStyles = createStyles((theme) => ({
       backgroundColor: "green",
       width: rem(45),
       height: rem(2),
-      marginTop: theme.spacing.sm
-    }
-  }
+      marginTop: theme.spacing.sm,
+    },
+  },
 }));
 
 export default function FeatureSection() {
