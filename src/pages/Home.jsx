@@ -16,7 +16,7 @@ import {
   Container,
   createStyles,
   useMantineTheme,
-  px
+  px,
 } from "@mantine/core";
 import { useScrollIntoView } from "@mantine/hooks";
 import otownlogo from "../assets/otownlogo.jpg";
@@ -61,98 +61,95 @@ import e3 from "../assets/e3.jpg";
 import map from "../assets/map.png";
 import { HomeCarousel } from "../components/HomeCarousel";
 import { IconArrowUp, IconMail, IconPhone } from "@tabler/icons-react";
-import Slide from "react-reveal/Slide";
-import Fade from "react-reveal/Fade";
+
+import { Slide } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const useStyles = createStyles((theme) => ({
   root: {
     margin: "0 auto",
-    maxWidth: "1000px"
+    maxWidth: "1000px",
   },
   root2: {
     margin: "0 auto",
-    maxWidth: "500px"
-  }
+    maxWidth: "500px",
+  },
 }));
 
 export default function Home() {
   const { classes } = useStyles();
 
-  const {
-    scrollIntoView: scrollIntoView1,
-    targetRef: targetRef1
-  } = useScrollIntoView({
-    target: document.querySelector("#section1"),
-    offset: 60
-  });
+  const { scrollIntoView: scrollIntoView1, targetRef: targetRef1 } =
+    useScrollIntoView({
+      target: document.querySelector("#section1"),
+      offset: 60,
+    });
 
-  const {
-    scrollIntoView: scrollIntoView2,
-    targetRef: targetRef2
-  } = useScrollIntoView({
-    target: document.querySelector("#section2"),
-    offset: 60
-  });
+  const { scrollIntoView: scrollIntoView2, targetRef: targetRef2 } =
+    useScrollIntoView({
+      target: document.querySelector("#section2"),
+      offset: 60,
+    });
   const A1 = {
-    imageUrl: ap1
+    imageUrl: ap1,
   };
   const B1 = {
-    imageUrl: bp1
+    imageUrl: bp1,
   };
   const A2 = {
-    imageUrl: ap2
+    imageUrl: ap2,
   };
   const B2 = {
-    imageUrl: bp2
+    imageUrl: bp2,
   };
   const A3 = {
-    imageUrl: ap3
+    imageUrl: ap3,
   };
   const B3 = {
-    imageUrl: bp3
+    imageUrl: bp3,
   };
   const A4 = {
-    imageUrl: ap4
+    imageUrl: ap4,
   };
   const B4 = {
-    imageUrl: bp4
+    imageUrl: bp4,
   };
   const A5 = {
-    imageUrl: ap5
+    imageUrl: ap5,
   };
   const B5 = {
-    imageUrl: bp5
+    imageUrl: bp5,
   };
   const A6 = {
-    imageUrl: ap6
+    imageUrl: ap6,
   };
   const B6 = {
-    imageUrl: bp6
+    imageUrl: bp6,
   };
   const A7 = {
-    imageUrl: ap7
+    imageUrl: ap7,
   };
   const B7 = {
-    imageUrl: bp7
+    imageUrl: bp7,
   };
   const A8 = {
-    imageUrl: ap8
+    imageUrl: ap8,
   };
   const B8 = {
-    imageUrl: bp9
+    imageUrl: bp9,
   };
   const A9 = {
-    imageUrl: ap11
+    imageUrl: ap11,
   };
   const B9 = {
-    imageUrl: bp10
+    imageUrl: bp10,
   };
 
   const A10 = {
-    imageUrl: ap12
+    imageUrl: ap12,
   };
   const B10 = {
-    imageUrl: bp12
+    imageUrl: bp12,
   };
   return (
     <>
@@ -198,7 +195,7 @@ export default function Home() {
               leftIcon={<IconMail />}
               onClick={() =>
                 scrollIntoView1({
-                  alignment: "center"
+                  alignment: "center",
                 })
               }
               variant="light"
@@ -276,7 +273,7 @@ export default function Home() {
             breakpoints={[
               { maxWidth: "sm", cols: 1 },
               { maxWidth: "md", cols: 2 },
-              { maxWidth: "lg", cols: 2 }
+              { maxWidth: "lg", cols: 2 },
             ]}
           >
             <Slide right>
@@ -575,7 +572,7 @@ export default function Home() {
             breakpoints={[
               { maxWidth: "sm", cols: 1 },
               { maxWidth: "md", cols: 1 },
-              { maxWidth: "lg", cols: 2 }
+              { maxWidth: "lg", cols: 2 },
             ]}
           >
             <Slide right>
@@ -770,7 +767,7 @@ export default function Home() {
           <Button
             onClick={() =>
               scrollIntoView2({
-                alignment: "center"
+                alignment: "center",
               })
             }
             variant="light"
