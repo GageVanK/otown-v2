@@ -6,14 +6,14 @@ import {
   SimpleGrid,
   Skeleton,
   useMantineTheme,
-  rem
+  rem,
 } from "@mantine/core";
 import roof1 from "../assets/roof1.jpeg";
 import roof2 from "../assets/roof2.jpeg";
 
 import roof4 from "../assets/roof4.jpeg";
 import roof5 from "../assets/roof5.jpeg";
-import Zoom from "react-reveal/Zoom";
+import { Zoom } from "react-awesome-reveal";
 const PRIMARY_COL_HEIGHT = rem(300);
 
 export function HomeCarousel() {

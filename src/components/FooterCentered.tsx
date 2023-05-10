@@ -1,18 +1,9 @@
-import {
-  Image,
-  createStyles,
-  Text,
-  Group,
-  ActionIcon,
-  rem
-} from "@mantine/core";
+import { createStyles, Text, Group, ActionIcon, rem } from "@mantine/core";
 import {
   IconBrandFacebook,
   IconPhone,
-  IconBrandInstagram
+  IconBrandInstagram,
 } from "@tabler/icons-react";
-
-import otownlogo from "../assets/otownlogo.jpg";
 
 const useStyles = createStyles((theme) => ({
   footer: {
@@ -20,7 +11,7 @@ const useStyles = createStyles((theme) => ({
     height: rem(60),
     borderTop: `${rem(1)} solid ${
       theme.colorScheme === "dark" ? theme.colors.dark[5] : theme.colors.gray[2]
-    }`
+    }`,
   },
 
   inner: {
@@ -30,16 +21,16 @@ const useStyles = createStyles((theme) => ({
     padding: `${theme.spacing.md} ${theme.spacing.md}`,
 
     [theme.fn.smallerThan("sm")]: {
-      flexDirection: "column"
-    }
+      flexDirection: "column",
+    },
   },
 
   links: {
     [theme.fn.smallerThan("sm")]: {
       marginTop: theme.spacing.lg,
-      marginBottom: theme.spacing.sm
-    }
-  }
+      marginBottom: theme.spacing.sm,
+    },
+  },
 }));
 
 export default function FooterCentered() {
